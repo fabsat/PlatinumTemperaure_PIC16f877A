@@ -1,0 +1,509 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"31 C:\thermo_PIC16F877A.X\AD_value.c
+[v _ad_con_init ad_con_init `(v  1 e 0 0 ]
+"52
+[v _bit_shift bit_shift `(i  1 s 2 bit_shift ]
+"98
+[v _get_adcon get_adcon `(d  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"409 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+"425
+[v _scale scale `(d  1 s 3 scale ]
+"464
+[v _printf printf `(i  1 e 2 0 ]
+"60 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"60 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"30 C:\thermo_PIC16F877A.X\newmain.c
+[v _main main `(i  1 e 2 0 ]
+"32 C:\thermo_PIC16F877A.X\plati_temp.c
+[v _get_pt get_pt `(d  1 s 3 get_pt ]
+"58
+[v _get_temp get_temp `(d  1 e 3 0 ]
+"29 C:\thermo_PIC16F877A.X\uart_serial.c
+[v _uart_init uart_init `(v  1 e 0 0 ]
+"37
+[v _putch putch `(v  1 e 0 0 ]
+"44
+[v _getch getch `(uc  1 e 1 0 ]
+[s S114 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"175 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic16f877a.h
+[u S121 . 1 `S114 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES121  1 e 1 @5 ]
+[s S40 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"348
+[u S49 . 1 `S40 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES49  1 e 1 @8 ]
+"937
+[v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
+"1031
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1037
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1118
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1124
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S150 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 GO_nDONE 1 0 :1:2 
+`uc 1 CHS 1 0 :3:3 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1155
+[s S156 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO 1 0 :1:2 
+`uc 1 CHS0 1 0 :1:3 
+`uc 1 CHS1 1 0 :1:4 
+`uc 1 CHS2 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S164 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nDONE 1 0 :1:2 
+]
+[s S167 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO_DONE 1 0 :1:2 
+]
+[u S170 . 1 `S150 1 . 1 0 `S156 1 . 1 0 `S164 1 . 1 0 `S167 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES170  1 e 1 @31 ]
+[s S131 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1303
+[u S138 . 1 `S131 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES138  1 e 1 @133 ]
+[s S19 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1476
+[u S28 . 1 `S19 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES28  1 e 1 @136 ]
+"1950
+[v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
+"2030
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2169
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2175
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2559
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2571
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2717
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"2755
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+[v _dpowers dpowers `DCC[10]ul  1 s 40 dpowers ]
+"7 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\powers.c
+[v __powers_ _powers_ `DCC[13]d  1 e 39 0 ]
+"39
+[v __npowers_ _npowers_ `DCC[13]d  1 e 39 0 ]
+"30 C:\thermo_PIC16F877A.X\newmain.c
+[v _main main `(i  1 e 2 0 ]
+{
+"44
+} 0
+"29 C:\thermo_PIC16F877A.X\uart_serial.c
+[v _uart_init uart_init `(v  1 e 0 0 ]
+{
+"35
+} 0
+"464 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+[v printf@f f `*.24DCCuc  1 a 1 wreg ]
+[u S286 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
+"526
+[v printf@tmpval tmpval `S286  1 a 4 63 ]
+"528
+[v printf@val val `ul  1 a 4 57 ]
+"516
+[v printf@fval fval `d  1 a 3 69 ]
+"504
+[v printf@prec prec `i  1 a 2 67 ]
+"516
+[v printf@exp exp `i  1 a 2 61 ]
+"508
+[v printf@flag flag `us  1 a 2 54 ]
+"499
+[v printf@c c `c  1 a 1 72 ]
+"466
+[v printf@ap ap `[1]*.4v  1 a 1 53 ]
+"464
+[v printf@f f `*.24DCCuc  1 a 1 wreg ]
+"533
+[v printf@f f `*.24DCCuc  1 a 1 56 ]
+"1541
+} 0
+"425
+[v _scale scale `(d  1 s 3 scale ]
+{
+[v scale@scl scl `c  1 a 1 wreg ]
+[v scale@scl scl `c  1 a 1 wreg ]
+"428
+[v scale@scl scl `c  1 a 1 40 ]
+"441
+} 0
+"37 C:\thermo_PIC16F877A.X\uart_serial.c
+[v _putch putch `(v  1 e 0 0 ]
+{
+[v putch@byte byte `uc  1 a 1 wreg ]
+[v putch@byte byte `uc  1 a 1 wreg ]
+[v putch@byte byte `uc  1 a 1 0 ]
+"42
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"409 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+{
+[v fround@prec prec `uc  1 a 1 wreg ]
+[v fround@prec prec `uc  1 a 1 wreg ]
+"413
+[v fround@prec prec `uc  1 a 1 47 ]
+"418
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 5 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 4 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 6 ]
+"51
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"35
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 7 ]
+[v ___awdiv@dividend dividend `i  1 p 2 9 ]
+"42
+} 0
+"60 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __tdiv_to_l_@quot quot `ul  1 a 4 0 ]
+"62
+[v __tdiv_to_l_@exp1 exp1 `uc  1 a 1 5 ]
+[v __tdiv_to_l_@cntr cntr `uc  1 a 1 4 ]
+"60
+[v __tdiv_to_l_@f1 f1 `f  1 p 3 0 ]
+[v __tdiv_to_l_@f2 f2 `f  1 p 3 3 ]
+"101
+} 0
+"60 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __div_to_l_@quot quot `ul  1 a 4 0 ]
+"62
+[v __div_to_l_@exp1 exp1 `uc  1 a 1 5 ]
+[v __div_to_l_@cntr cntr `uc  1 a 1 4 ]
+"60
+[v __div_to_l_@f1 f1 `d  1 p 3 0 ]
+[v __div_to_l_@f2 f2 `d  1 p 3 3 ]
+"101
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"35 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 13 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 8 ]
+"46
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 9 ]
+"6
+[v ___llmod@divisor divisor `ul  1 p 4 0 ]
+[v ___llmod@dividend dividend `ul  1 p 4 4 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"31
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 50 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 54 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 49 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 41 ]
+"73
+} 0
+"18 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f2 f2 `f  1 p 3 68 ]
+[v ___ftsub@f1 f1 `f  1 p 3 71 ]
+"27
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"58 C:\thermo_PIC16F877A.X\plati_temp.c
+[v _get_temp get_temp `(d  1 e 3 0 ]
+{
+"61
+[v get_temp@t t `d  1 a 3 39 ]
+"60
+[v get_temp@T T `d  1 a 3 36 ]
+"62
+[v get_temp@i i `i  1 a 2 42 ]
+"71
+} 0
+"32
+[v _get_pt get_pt `(d  1 s 3 get_pt ]
+{
+"35
+[v get_pt@a a `d  1 a 3 30 ]
+"34
+[v get_pt@T1 T1 `d  1 a 3 27 ]
+[v get_pt@R1 R1 `d  1 a 3 21 ]
+"36
+[v get_pt@b b `d  1 a 3 6 ]
+"34
+[v get_pt@T2 T2 `d  1 a 3 3 ]
+[v get_pt@R2 R2 `d  1 a 3 0 ]
+"45
+} 0
+"98 C:\thermo_PIC16F877A.X\AD_value.c
+[v _get_adcon get_adcon `(d  1 e 3 0 ]
+{
+"109
+[v get_adcon@my_adres_l my_adres_l `l  1 a 4 43 ]
+"108
+[v get_adcon@my_adres_h my_adres_h `l  1 a 4 39 ]
+"105
+[v get_adcon@voltage_value voltage_value `d  1 a 3 47 ]
+"104
+[v get_adcon@ad_value ad_value `i  1 a 2 50 ]
+"101
+[v get_adcon@range range `DCCui  1 s 2 range ]
+"127
+} 0
+"52
+[v _bit_shift bit_shift `(i  1 s 2 bit_shift ]
+{
+[v bit_shift@my_adres_h my_adres_h `uc  1 a 1 wreg ]
+"54
+[v bit_shift@j j `i  1 a 2 10 ]
+[v bit_shift@i i `i  1 a 2 7 ]
+"55
+[v bit_shift@ad_value ad_value `i  1 a 2 5 ]
+"57
+[v bit_shift@buf buf `uc  1 a 1 12 ]
+"58
+[v bit_shift@bit_mask bit_mask `uc  1 a 1 9 ]
+"52
+[v bit_shift@my_adres_h my_adres_h `uc  1 a 1 wreg ]
+[v bit_shift@my_adres_l my_adres_l `uc  1 p 1 0 ]
+"57
+[v bit_shift@my_adres_h my_adres_h `uc  1 a 1 4 ]
+"85
+} 0
+"28 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 27 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 31 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 30 ]
+[v ___ftmul@exp exp `uc  1 a 1 26 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 16 ]
+[v ___ftmul@f2 f2 `f  1 p 3 19 ]
+"157
+} 0
+"56 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 11 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 15 ]
+[v ___ftdiv@exp exp `uc  1 a 1 14 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 10 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 0 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 3 ]
+"86
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 13 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 52 ]
+"20
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 67 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 66 ]
+[v ___ftadd@sign sign `uc  1 a 1 65 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 55 ]
+[v ___ftadd@f2 f2 `f  1 p 3 58 ]
+"148
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"31 C:\thermo_PIC16F877A.X\AD_value.c
+[v _ad_con_init ad_con_init `(v  1 e 0 0 ]
+{
+"38
+} 0
