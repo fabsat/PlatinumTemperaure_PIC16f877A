@@ -29,8 +29,8 @@
 ****************************************************************************/
 int main(){
 
-    TRISDbits.TRISD4 = 0;   // LEDを使用するピン設定(RA4)
-    PORTDbits.RD4 =0;       // LEDを使用するピン設定(RA4)
+    TRISDbits.TRISD4 = 0;   // LEDを使用するピン設定(RD4)
+    PORTDbits.RD4 =0;       // LEDを使用するピン設定(RD4)
     uart_init();            //「調歩同期式シリアル通信」の設定を行う関数
     ad_con_init();          // AD変換の初期設定
     printf("Start_Temp!\r\n");
